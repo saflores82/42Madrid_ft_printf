@@ -6,15 +6,14 @@
 #    By: saflores <saflores@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/16 09:03:52 by saflores          #+#    #+#              #
-#    Updated: 2024/07/18 11:01:54 by saflores         ###   ########.fr        #
+#    Updated: 2024/07/24 10:06:41 by saflores         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CCC = gcc
 CFLAGS = -Wall -Wextra -Werror
-NAME = ft_print_sfo
-SRCS = ft_printf.c \
-       main.c
+NAME = libftprintf.a
+SRCS = ft_printf.c 
 OBJS = $(SRCS:.c=.o)
 LIBFT = libft/libft.a
 INCLUDES = -Ilibft -I.
@@ -22,7 +21,8 @@ INCLUDES = -Ilibft -I.
 all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) -no-pie $(OBJS) $(LIBFT) -o $(NAME)
+	cp $(LIBFT) $(NAME)
+	ar rcs $(NAME) $(OBJS)
 
 $(LIBFT):
 	$(MAKE) -C libft

@@ -6,7 +6,7 @@
 /*   By: saflores <saflores@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 18:52:11 by saflores          #+#    #+#             */
-/*   Updated: 2024/07/18 10:47:46 by saflores         ###   ########.fr       */
+/*   Updated: 2024/07/23 07:53:42 by saflores         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,6 @@ char	*ft_strchr(const char *s, int c);
 
 char	*ft_strrchr(const char *s, int c);
 
-/*int	ft_strcmp(const char *s1, const char *s2);*/
-
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -84,7 +82,7 @@ int		ft_putchar(char c);
 
 int		ft_putnbr(long nb);
 
-int		ft_putnbr_hexa(unsigned int nbr, char up);
+int		ft_putnbr_hexa(unsigned long nbr, char up);
 
 int		ft_putptr(void *ptr);
 

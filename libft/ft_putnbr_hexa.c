@@ -6,13 +6,13 @@
 /*   By: saflores <saflores@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:30:44 by saflores          #+#    #+#             */
-/*   Updated: 2024/07/18 10:40:23 by saflores         ###   ########.fr       */
+/*   Updated: 2024/07/23 07:51:57 by saflores         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_hexa(unsigned int nbr, char up)
+int	ft_putnbr_hexa(unsigned long nbr, char up)
 {
 	int		len;
 	int		mod;
